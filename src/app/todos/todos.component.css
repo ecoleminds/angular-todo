@@ -1,0 +1,33 @@
+li {
+    list-style: none;
+}
+
+input[type="checkbox" i] {
+    height: 20px;
+    width: 20px;
+}
+
+.todo {
+    line-height: 25px;
+    font-size: 25px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.todo.done {
+    text-decoration: line-through;
+}
+
+.remove {
+    width: 30px;
+    height: 25px;
+    background-color: #ff0000ad;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    display: inline-block;
+}
+
+.remove:hover{
+    background-color: red;
+}

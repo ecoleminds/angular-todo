@@ -1,0 +1,21 @@
+input {
+  height: 30px;
+  font-size: 28px;
+  padding: 8px;
+}
+
+.add {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.add:hover {
+  background-color: #186b1b;
+}

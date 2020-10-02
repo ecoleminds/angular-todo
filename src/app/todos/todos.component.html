@@ -1,0 +1,19 @@
+<!-- mainly to fetch the http json data & setup this.todos -->
+<div *ngIf="fetchData | async"></div>
+
+<!-- get the data and spread it on the page -->
+<ul *ngIf="todos | async as todos">
+  <li *ngFor="let todo of todos; let i = index">
+    <span [class.done]="todo.complete" class="todo">
+      <input
+        type="checkbox"
+        [checked]="todo.complete"
+        (change)="onChange(todo.id)"
+      />
+      <!--  bind [checked] to the state complete of todo pass todo.id on(change) event, and run onChange function from the .ts file-->
+      {{ i + 1 }}. {{ todo.title }}
+    </span>
+    <button class="remove" (click)="removeTodo(todo.id)">X</button>
+  </li>
+</ul>
+
